@@ -1,3 +1,82 @@
-h1 {
-  color: tomato;
+$break-small: 320px;
+$break-large: 1200px;
+
+header {
+  background-color: black;
 }
+
+html, body {
+  // background-color: #0A0A0A;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.app {
+  width:100;  height: 100%;
+  // position: absolute; top: 0; left: 0;
+  margin: 0 auto;
+}
+
+.home {
+  // background-color: #0A0A0A;
+  margin-top: 50%;
+  margin-bottom: 0%;
+  text-align: center;
+
+  // @media screen and (max-width: $break-small) {
+  //   width: 100px;
+  //   float: none;
+  //   color: tomato;
+  // }
+
+  @media screen and (min-width: $break-large) {
+    float: right;
+  }
+}
+
+.logo {
+  height: 90%;
+  width: 90%;
+
+  -webkit-animation: fadein 1s
+}
+
+.slogan-continue {
+  // -webkit-animation: fadein 1s
+}
+
+.slogan {
+  margin-top: 5%;
+  font-size: 80px;
+  color: #0b4657;
+  -webkit-animation: fadein 1s
+  // -webkit-animatrion: fadeout 1s
+}
+
+.continue-button {
+  align-self: center;
+  border: none;
+  background-color: #0b4657;
+  margin-top: 50%;
+  font-size: 48px;
+  width: 80%;
+  height: 200px;
+  margin-left: 10%;
+  -webkit-animation: fadein 2s
+}
+
+// FADES
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+// .delay-2 {
+//   animation-delay: 1s;
+// }
