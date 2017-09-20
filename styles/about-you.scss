@@ -1,0 +1,44 @@
+.about-you {
+  // background-color: #0A0A0A;
+  // margin-top: 50%;
+  margin-bottom: 0%;
+  // text-align: center;
+
+  // @media screen and (max-width: $break-small) {
+  //   width: 100px;
+  //   float: none;
+  //   color: tomato;
+  // }
+
+  @media screen and (min-width: $break-large) {
+    float: right;
+  }
+}
+
+.about-you-input {
+  // background-color: #0A0A0A;
+  // margin-top: 50%;
+  margin-bottom: 0%;
+  font-size: 84px;
+  // text-align: center;
+
+  // @media screen and (max-width: $break-small) {
+  //   width: 100px;
+  //   float: none;
+  //   color: tomato;
+  // }
+
+  @media screen and (min-width: $break-large) {
+    float: right;
+  }
+}
+
+.title {
+  // margin-top: 5%;
+  margin-top: 0%;
+  font-family: sans-serif;
+  font-size: 80px;
+  color: #0b4657;
+  -webkit-animation: fadein 1s
+  // -webkit-animatrion: fadeout 1s
+}
