@@ -12,7 +12,7 @@ class Home extends Component {
           <img className='logo' src="../../build/PW_logo_04-vert-stacked_2.png" />
           <div className='slogan-continue'>
             <h2 className='slogan'>MIDI CONTROLLER SURVEY</h2>
-            <LinkContainer to="/survey">
+            <LinkContainer to="/survey/1">
               <Button className='continue-button'>BEGIN</Button>
             </LinkContainer>
           </div>
