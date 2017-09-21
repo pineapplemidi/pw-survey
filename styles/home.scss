@@ -31,7 +31,7 @@ html, body {
   // }
 
   @media screen and (min-width: $break-large) {
-    float: right;
+    // float: right;
   }
 }
 
@@ -58,7 +58,7 @@ html, body {
 .continue-button {
   align-self: center;
   border-color: #0b4657;
-  border-width: 15px;
+  border-width: 10px;
   border-radius: 40px;
   background-color: white;
   margin-top: 30%;

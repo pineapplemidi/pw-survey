@@ -4,6 +4,7 @@ import { LinkContainer } from 'react-router-bootstrap'
 
 // import Form, { Input, Fieldset } from 'react-bootstrap-form'
 import { QuestionShortAnswer } from './questionShortAnswer.jsx'
+import { QuestionCheckbox } from './questionCheckbox.jsx'
 
 export const Page = (props) => {
 
@@ -16,9 +17,15 @@ export const Page = (props) => {
       <h2 className='title'>{props.page.title}</h2>
       <FormGroup controlId='survey'>
         {props.page.questions.map(function (question, index) {
-          return (
-            <QuestionShortAnswer key={index} question={question} />
-          )
+          if (question.type == 'short-text') {
+            return (
+              <QuestionShortAnswer key={index} question={question} />
+            )
+          } else if (question.type == 'checkbox') {
+            return(
+              <QuestionCheckbox key={index} question={question} />
+            )
+          }
         })}
       </FormGroup>
       <LinkContainer to={url}>

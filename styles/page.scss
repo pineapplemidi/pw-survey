@@ -79,6 +79,8 @@
   margin-bottom: 5%;
   text-align: center;
   font-size: 100px;
+  width: 90%;
+  margin-left: 5%;
   color: #0b4657;
   font-family: 'Pacifico';
   -webkit-animation: fadein 1s
@@ -98,6 +100,7 @@
 }
 
 .next-button {
+  // display: table-cell; vertical-align: middle;
   align-self: center;
   border-color: #0b4657;
   border-width: 10px;
@@ -107,7 +110,7 @@
   margin-left: 10%;
   margin-top: 5%;
   font-family: 'Pacifico';
-  font-size: 64px;
+  font-size: 48px;
   width: 80%;
   height: 200px;
   -webkit-animation: fadein 1s

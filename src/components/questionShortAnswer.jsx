@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
+import React, {Component} from 'react'
 
 // import Form, { Input, Fieldset } from 'react-bootstrap-form'
-import { FormGroup, ControlLabel, FormControl, Button, Checkbox } from 'react-bootstrap'
+import { FormControl } from 'react-bootstrap'
 
 export const QuestionShortAnswer = (props) => {
 

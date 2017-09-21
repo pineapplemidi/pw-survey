@@ -25,6 +25,11 @@ export default class SurveyContainer extends Component {
             answer: ""
           },
           {
+            type: "checkbox",
+            question: "What are you? (Check all that apply)",
+            answers: ['Digital Performer', 'Live Musician', 'DJ', 'Other']
+          },
+          {
             type: "short-text",
             question: "What is your Band, DJ, or Performer name?",
             answer: ""
@@ -40,12 +45,12 @@ export default class SurveyContainer extends Component {
         title: "Software",
         questions: [
           {
-            type: "short-text-multi",
+            type: "short-text",
             question: "What software do you use to produce?",
             answer: []
           },
           {
-            type: "short-text-multi",
+            type: "short-text",
             question: "What software do you use live",
             answer: []
           }
@@ -55,17 +60,17 @@ export default class SurveyContainer extends Component {
         title: "Hardware",
         questions: [
           {
-            type: "short-text-multi",
+            type: "short-text",
             question: "What controllers to you have for your live setup?",
             answer: []
           },
           {
-            type: "short-text-multi",
+            type: "short-text",
             question: "What's your favorite thing about you live setup?",
             answer: []
           },
           {
-            type: "short-text-multi",
+            type: "short-text",
             question: "What do you wish you could do with your live setup?",
             answer: []
           }
@@ -75,13 +80,12 @@ export default class SurveyContainer extends Component {
         title: "Thanks for participating in our Survey!",
         questions: [
           {
-            type: "short-text-multi",
+            type: "short-text",
             question: "Would you like to join our email list?",
             answer: []
           }
         ]
-      }
-      ]
+      }]
     }
   }
 
