@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 
 import AboutYou from '../components/aboutYou.jsx'
+import { Page } from '../components/page.jsx'
 
 export default class SurveyContainer extends Component {
   constructor() {
@@ -11,22 +12,32 @@ export default class SurveyContainer extends Component {
         num_pages: 4
       },
       pages: [{
-        title: "about you",
+        title: "ABOUT YOU",
         questions: [
           {
             type: "short-text",
-            question: "What is your name",
+            question: "What is your name?",
             answer: ""
           },
           {
             type: "short-text",
             question: "Where are you from",
             answer: ""
+          },
+          {
+            type: "short-text",
+            question: "What is your Band, DJ, or Performer name?",
+            answer: ""
+          },
+          {
+            type: "short-text",
+            question: "What is your soundcloud URL? (ex: soundcloud.com/tipper)",
+            answer: ""
           }
         ]
       },
       {
-        title: "technology",
+        title: "Technology",
         questions: [
           {
             type: "short-text-multi",
@@ -46,8 +57,16 @@ export default class SurveyContainer extends Component {
   render() {
     return (
       <div>
-        <AboutYou />
+        <Page
+          metadata={this.state.metadata}
+          page={this.state.pages[this.state.metadata.page - 1]}
+          handleNext={this.handleNext}
+        />
       </div>
     )
+  }
+
+  handleNext(metadata) {
+    metadata.page = metadata.page + 1
   }
 }

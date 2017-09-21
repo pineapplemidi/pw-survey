@@ -44,6 +44,35 @@
   -webkit-animation: fadein 1s
 }
 
+.question-short-answer {
+  // background-color: #0A0A0A;
+  // margin-top: 50%;
+  margin-bottom: 10%;
+
+  // text-align: center;
+
+  // @media screen and (max-width: $break-small) {
+  //   width: 100px;
+  //   float: none;
+  //   color: tomato;
+  // }
+  margin-left: 10%;
+  z-index: 2;
+  width: 80%;
+  border: 1px solid #0b4657;
+  border-radius: 40px;
+  box-sizing: border-box;
+  font-size: 64px;
+  outline-width: 100;
+  text-indent: 40px;
+  font-family: 'Pacifico';
+
+  @media screen and (min-width: $break-large) {
+    // float: right;
+  }
+  -webkit-animation: fadein 1s
+}
+
 .title {
   margin-top: 10%;
   margin-bottom: 5%;
