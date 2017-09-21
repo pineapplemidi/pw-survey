@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
 // import Form, { Input, Fieldset } from 'react-bootstrap-form'
-import { FormGroup, ControlLabel, FormControl, Button } from 'react-bootstrap'
+import { FormGroup, ControlLabel, FormControl, Button, Checkbox } from 'react-bootstrap'
 
 class AboutYou extends Component {
 
@@ -18,21 +18,14 @@ class AboutYou extends Component {
               type='text'
               placeholder='required'
             />
-	    <div className='question-text'>What city are you from?</div>
-	    <FormControl
-              name='city'
-              className='about-you-input'
-              type='text'
-              placeholder='required'
-            />
-	    <div className='question-text'>What country are you from?</div>
-	    <FormControl
-              name='country'
-              className='about-you-input'
-              type='text'
-              placeholder='required'
-            />
-            <div className='question-text'>What is your Band, Performer, or DJ name?</div>
+            <div className='question-text'>What are you? (check all that apply)</div>
+            <div className='checkboxes'>
+              <Checkbox className='checkbox' label='Digital Performer'>Digital Performer</Checkbox>
+              <Checkbox className='checkbox' label='Live Musician'>Live Musician</Checkbox>
+              <Checkbox className='checkbox' label='DJ'>DJ</Checkbox>
+              <Checkbox className='checkbox' label='Other'>Other</Checkbox>
+            </div>
+            <div className='question-text'>What is your Band, DJ, or Performer name?</div>
             <FormControl
               name='dj-band-name'
               className='about-you-input'
