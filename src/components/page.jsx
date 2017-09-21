@@ -17,11 +17,10 @@ export const Page = (props) => {
       <FormGroup controlId='survey'>
         {props.page.questions.map(function (question, index) {
           return (
-            <QuestionShortAnswer question={question} />
+            <QuestionShortAnswer key={index} question={question} />
           )
         })}
       </FormGroup>
-      <Button className='next-button'>next</Button>
       <LinkContainer to={url}>
         <Button
           className='next-button'
