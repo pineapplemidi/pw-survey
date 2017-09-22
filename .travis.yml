@@ -13,8 +13,8 @@ services:
 env:
   global:
     - GOOGLE_APPLICATION_CREDENTIALS-~/.gcloud-service-key.json
-    - PROJECT_NAME=fifth-marker-132121
-    - CLUSTER_NAME=cluster-1
+    - PROJECT_NAME=hardy-tine-180619
+    - CLUSTER_NAME=pw-test-cluster
     - CLOUDSDK_COMPUTE_ZONE=us-central1-f
     - NODE_ENV=CI
 
@@ -31,12 +31,12 @@ install:
 script:
   - echo "skip tests"
 
-# before_deploy:
-#   - gcloud --quiet components update kubectl
+before_deploy:
+  - gcloud --quiet components update kubectl
 
-# deploy:
-#   - provider: script
-#     script: ./resources/deploy.sh
-#     skip_cleanup: true
-#     on:
-#       branch: master
+deploy:
+  - provider: script
+    script: ./resources/deploy.sh
+    skip_cleanup: true
+    on:
+      branch: master
